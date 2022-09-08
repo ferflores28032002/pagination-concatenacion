@@ -6,10 +6,13 @@ export const MostrarMovies = ({ movies }) => {
     <div className={styles.caja}>
       {movies.map((movie) => (
         <div key={movie.id} className={styles.caja2}>
-          <img
-            src={img + movie.poster_path}
-            alt={movie.title ? movie.title : movie.name}
-          />
+          <div className={styles.hover}>
+            <img
+              src={img + movie.poster_path}
+              alt={movie.title ? movie.title : movie.name}
+            />
+            <h6><i className="fa-brands fa-youtube"></i></h6>
+          </div>
           <p key={movie.id}>{movie.title ? movie.title : movie.name}</p>
         </div>
       ))}
