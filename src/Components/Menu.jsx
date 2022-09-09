@@ -10,6 +10,9 @@ export const Menu = () => {
       <Link to={"/concatenation"}>
         <button className="btn btn-outline-danger">Concatenation</button>
       </Link>
+      <Link to={"/ecomerme"}>
+        <button className="btn btn-outline-warning">Comermes</button>
+      </Link>
       {/* <button className='btn btn-outline-primary'></button> */}
     </div>
   );
